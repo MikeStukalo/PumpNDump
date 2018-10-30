@@ -1,0 +1,12 @@
+name: PumpNDump
+title: PumpNDump
+username:
+account: mikestukalo
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 543712
+bundleId: 1673021
+url: https://mikestukalo.shinyapps.io/PumpNDump/
+when: 1540939431.25969
+asMultiple: FALSE
+asStatic: FALSE
