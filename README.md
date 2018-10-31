@@ -8,7 +8,9 @@ A web-scraping project aimed at identification of potential pump-and-dump activi
 
 
 / analysis - Python code to clean, compile and analyze the scraped data
+
 / analysis/data - scraped data (filenames correspond to reddit boards)
+
 / analysis/output - some output files later used in the presentation
 
 
