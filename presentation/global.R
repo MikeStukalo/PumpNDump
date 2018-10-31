@@ -111,6 +111,8 @@ data = data[data$Flag!="",]
 data$PS[data$PS>0] = 1
 data$PS[data$PS<0] = -1
 
+data$PS = as.factor(data$PS)
+
 
 logit2 = glm(Flag ~ Np + PS,
              family = "binomial",
@@ -130,6 +132,8 @@ data = data[data$Flag!="",]
 data$PS[data$PS>0] = 1
 data$PS[data$PS<0] = -1
 
+data$PS = as.factor(data$PS)
+
 
 logit3 = glm(Flag ~ Np + PS + R,
              family = "binomial",
@@ -146,9 +150,6 @@ data = final %>% group_by(week, ticker, top_post) %>% summarize(Flag = last(lead
 
 data = data[data$Flag!="",]
 
-# Change PS to categorical
-data$PS[data$PS>0] = 1
-data$PS[data$PS<0] = -1
 
 # Create interaction variables
 data$m1TP_Np = (1-data$top_post) * data$Np
